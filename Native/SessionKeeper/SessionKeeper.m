@@ -63,8 +63,8 @@ void contextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, u
     func[0].function = &saveCookie;
     
     func[1].name = (const uint8_t*) "readCookie";
-    func[0].functionData = NULL;
-    func[0].function = &readCookie;
+    func[1].functionData = NULL;
+    func[1].function = &readCookie;
     
     
     *functions = func;
